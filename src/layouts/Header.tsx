@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ScrollProgressBar from "@/components/common/ScrollProgressBar";
+import { ThemeSwitcher } from "./theme/Switch";
 
 const navList = [
   { name: "BLOG", href: "/blog" },
@@ -41,7 +42,9 @@ export const Header = () => {
           ))}
         </div>
 
-        <div className="flex gap-3"></div>
+        <div className="flex gap-3">
+          <ThemeSwitcher />
+        </div>
       </div>
       <ScrollProgressBar />
     </nav>
