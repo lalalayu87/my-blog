@@ -2,7 +2,6 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import DropdownMenuDemo from "@/components/ui/dropdown-menu";
 import { PiLampFill } from "react-icons/pi";
 
 export function ThemeSwitcher() {
