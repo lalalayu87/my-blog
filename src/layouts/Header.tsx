@@ -40,6 +40,8 @@ export const Header = () => {
             </Link>
           ))}
         </div>
+
+        <div className="flex gap-3"></div>
       </div>
       <ScrollProgressBar />
     </nav>
