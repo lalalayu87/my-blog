@@ -8,6 +8,7 @@ import {
   blogDesc,
   blogThumbnailURL,
 } from "@/config/const";
+import { ThemeProviders } from "@/layouts/theme/Provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseDomain),
@@ -36,9 +37,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-my-20 scroll-smooth">
       <body className="font-pretendard flex min-h-screen flex-col">
-        <Header />
-        <main className="mt-[64px] flex flex-1 flex-col">{children}</main>
-        <Footer />
+        <ThemeProviders>
+          <Header />
+          <main className="mt-[64px] flex flex-1 flex-col">{children}</main>
+          <Footer />
+        </ThemeProviders>
       </body>
     </html>
   );
