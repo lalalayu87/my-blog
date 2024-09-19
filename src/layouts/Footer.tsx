@@ -10,13 +10,11 @@ export const Footer = () => {
             className="fill-foreground transition hover:fill-green-600"
             height={30}
             width={30}
-            // color="black"
           ></IconGithub>
         </Link>
       </div>
       <div>
-        © 2024. <span className="font-semibold">JY YOU</span> all rights
-        reserved.
+        © 2024. <span className="font-semibold">YJY</span> all rights reserved.
       </div>
     </footer>
   );

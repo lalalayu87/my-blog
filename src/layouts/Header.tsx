@@ -16,8 +16,6 @@ const navList = [
 export const Header = () => {
   const { ref, marginTop } = useSpyElem(65);
   const pathname = usePathname();
-  console.log("marginTop", marginTop);
-  console.log("pathname", pathname);
 
   return (
     <nav
