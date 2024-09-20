@@ -10,6 +10,7 @@ import {
 } from "@/config/const";
 import { ThemeProviders } from "@/layouts/theme/Provider";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseDomain),
@@ -44,6 +45,7 @@ export default function RootLayout({
           <Footer />
         </ThemeProviders>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
