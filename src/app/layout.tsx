@@ -9,6 +9,7 @@ import {
   blogThumbnailURL,
 } from "@/config/const";
 import { ThemeProviders } from "@/layouts/theme/Provider";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseDomain),
@@ -42,6 +43,7 @@ export default function RootLayout({
           <main className="mt-[64px] flex flex-1 flex-col">{children}</main>
           <Footer />
         </ThemeProviders>
+        <Analytics />
       </body>
     </html>
   );

@@ -14,15 +14,19 @@ export function ThemeSwitcher() {
 
   if (!mounted) return null;
 
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <div className="flex items-center gap-4">
-      <button onClick={() => setTheme("light")}>
-        <PiLampFill style={{ color: theme === "light" ? "yellow" : "gray" }} />{" "}
-        {/* Light Mode */}
-      </button>
-      <button onClick={() => setTheme("dark")}>
-        <PiLampFill style={{ color: theme === "dark" ? "yellow" : "gray" }} />{" "}
-        {/* Dark Mode */}
+      <button onClick={toggleTheme}>
+        <PiLampFill
+          style={{
+            color: theme === "light" ? "gray" : "yellow",
+            fontSize: "1.5rem",
+          }}
+        />
       </button>
     </div>
   );
