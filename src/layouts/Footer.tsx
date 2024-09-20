@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="flex justify-center gap-4">
         <Link href="https://github.com/lalalayu87" target="_blank">
           <IconGithub
-            className="fill-foreground transition hover:fill-green-600"
+            className="transition hover:fill-green-600"
             height={30}
             width={30}
           ></IconGithub>
