@@ -23,7 +23,7 @@ export function ThemeSwitcher() {
       <button onClick={toggleTheme}>
         <PiLampFill
           style={{
-            color: theme === "light" ? "gray" : "yellow",
+            color: theme === "light" ? "black" : "yellow",
             fontSize: "1.5rem",
           }}
         />
